@@ -91,6 +91,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   width: calc(100% - 40px);
   padding: 10px 10px 10px 150px;
+  margin: 50px;
   border-radius: 15px 15px 0px 0px;
   position: absolute;
   top: 0;
@@ -128,12 +129,12 @@ html{
   min-height: 100%;
   overflow: hidden;
 }
-.line-1{
+.line-1, .line-2{
     position: relative;
     top: 50%;  
     width: 24em;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 180%;
     text-align: center;
@@ -149,9 +150,13 @@ html{
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
+.anim-typewriter2{
+  animation: typewriter 10s steps(44) 5s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 12em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
